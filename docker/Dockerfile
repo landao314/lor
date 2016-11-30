@@ -9,7 +9,7 @@ ENV LUA_SUFFIX=jit-2.1.0-beta1 \
     VAR_PREFIX=/var/nginx  \
     LOR_VERSION=V0.0.9   \
     LOR_PREFIX=/usr/local/lor \
-	PYTHON_VERSION=2.7.11-r3 \
+	PYTHON_VERSION=2.7.12-r0 \
 	PY_PIP_VERSION=7.1.2-r0 \
 	SUPERVISOR_VERSION=3.2.0
 
