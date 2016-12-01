@@ -77,7 +77,8 @@ RUN apk --no-cache add \
     libssl1.0 \
     libstdc++ \
     openssl \
-    pcre
+    pcre \
+    perl
 	
 	
 
@@ -97,7 +98,9 @@ RUN apk update \
 
 
 RUN apk --update add libuuid && rm -f /var/cache/apk/*  \
-&& ln -s /usr/lib/libuuid.so $OPENRESTY_PREFIX/lualib
+&& ln -s /usr/lib/libuuid.so $OPENRESTY_PREFIX/lualib \
+&& ln -s /lib/libuuid.so.1 /lib/libuuid.so \
+&& ln -s /lib/libuuid.so.1 /usr/lib/libuuid.so \
 
 
 
